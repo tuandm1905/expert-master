@@ -466,6 +466,8 @@ h5,
   z-index: 1999;
   position: absolute;
   width: 100%;
+  background-color: #0084ff;
+
 }
 
 .site-navbar .container-fluid {
@@ -1035,7 +1037,7 @@ h5,
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url("../images/ban1.jpg");
+  background-image: url("../images/ban2.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   box-sizing: border-box;
@@ -1171,11 +1173,11 @@ h5,
 }
 
 @media (max-width: 991.98px) {
-  .image-absolute-box .box {
+  .image-absolute-box img {
     top: auto;
     right: auto;
     position: relative;
-    width: 100%;
+    width: 50vw;
     max-width: 100%;
   }
 }
@@ -1403,6 +1405,10 @@ h5,
   margin-bottom: 1.5rem;
 }
 
+.service p {
+  font-size: 1rem;
+}
+
 .process {
   text-align: center;
   padding: 30px;
@@ -1411,7 +1417,7 @@ h5,
 
 .service {
   padding: 1.5rem;
-  height: 40vh;
+  height: ;
   max-height: 70%;
   background: #fff;
   position: relative;
@@ -1655,9 +1661,9 @@ h5,
 
 .pricing .price span {
   display: block;
-  font-weight: 700;
-  font-size: 13px;
-  letter-spacing: 0.2em;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #0084ff;
 }
@@ -1666,7 +1672,7 @@ h5,
   font-weight: 300;
   font-family: "Oswald", sans-serif;
   color: #0084ff;
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 
 .pricing .btn {
@@ -1981,4 +1987,113 @@ h5,
   line-height: 26px;
   /* margin-bottom: 15px; */
   /* margin-top: 10%; */
+}
+
+.section-intro {
+  height: 820px;
+  background-image: url(../images/ban1.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 577px) and (max-width: 800px) {
+  .section-intro {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .section-intro {
+    height: 300px;
+  }
+
+}
+
+.section-intro1 {
+  height: 820px;
+  background-image: url(../images/ban2.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 577px) and (max-width: 800px) {
+
+  .section-intro,
+  .section-intro1 {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .section-intro,
+  .section-intro1 {
+    height: 300px;
+  }
+
+}
+
+@media (min-width: 577px) and (max-width: 800px) {
+
+
+  .about-section p,
+  .about-section h3 {
+    font-size: 20px;
+  }
+
+  .carousel-inner {
+    height: auto;
+  }
+
+  .row-flex {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+
+  .about-section {
+    padding: 30px;
+  }
+
+  .section-intro h1 {
+    font-size: 2em;
+  }
+
+  .about-section p,
+  .about-section h3 {
+    font-size: 15px;
+  }
+
+  .carousel-inner {
+    height: auto;
+  }
+
+  .row-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row-flex h3 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .form-group p {
+    font-size: 15px;
+  }
+
+  .opening-time p span,
+  .contact-adress p span {
+    font-size: 15px;
+    text-align: center;
+  }
 }
